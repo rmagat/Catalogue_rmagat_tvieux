@@ -121,42 +121,4 @@ alter table QAO
 add foreign key (noUtil) references utilisateur (noUtil),
 add foreign key (noPDV) references pointDeVente (no);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	
