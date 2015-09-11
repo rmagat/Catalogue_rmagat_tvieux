@@ -13,10 +13,6 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    pdf.cpp
+        pdf.cpp\
 
-HEADERS  += mainwindow.h \
-    pdf.h
-
-FORMS    += mainwindow.ui
+HEADERS  += pdf.h\

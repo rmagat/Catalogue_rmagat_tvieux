@@ -22,6 +22,12 @@ private:
 public:
     //constructeur de la classe Pdf
     Pdf(int id, QString n);
+    //Écrit le contenu de la string de caractères leTexte dans le document PDF
+    void ecrireTexte();
+    //Insère dans le document l'image dont le chemin d'accès est passé en paramètre
+    void chargerImage();
+    //Ferme le document en l'enregistrant
+    void fermer();
 };
 
 #endif // PDF_H

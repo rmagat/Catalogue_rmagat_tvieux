@@ -12,7 +12,7 @@
  * @param idPdf
  * @param nomDocument
  */
-Pdf::Pdf(int idPdf, QString nomDocument)
+Pdf::Pdf(int id, QString n)
 {
     idPdf=id;
     nomDocument=n;
@@ -22,7 +22,7 @@ Pdf::Pdf(int idPdf, QString nomDocument)
  * @brief Écrit le contenu de la string de caractères
  * leTexte dans le document PDF
  */
-void ecrireText()
+void Pdf::ecrireTexte()
 {
 
 }
@@ -31,7 +31,7 @@ void ecrireText()
  * @brief Insère dans le document l'image dont le
  * chemin d'accès est passé en paramètre
  */
-void chargerImage()
+void Pdf::chargerImage()
 {
 
 }
@@ -39,7 +39,7 @@ void chargerImage()
 /**
  * @brief Ferme le document en l'enregistrant
  */
-void fermer()
+void Pdf::fermer()
 {
 
 }
