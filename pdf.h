@@ -7,11 +7,21 @@
 
 #ifndef PDF_H
 #define PDF_H
+#include <QString>
 
+/**
+ * @brief La classe Pdf class
+ */
 class Pdf
 {
+private:
+    //l'id du pdf
+    int idPdf;
+    //le ,nom du document
+    QString nomDocument;
 public:
-    pdf();
+    //constructeur de la classe Pdf
+    Pdf(int id, QString n);
 };
 
 #endif // PDF_H
