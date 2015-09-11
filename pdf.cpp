@@ -1,5 +1,5 @@
 #include "pdf.h"
 
-pdf::pdf()
+Pdf::Pdf()
 {
 }
