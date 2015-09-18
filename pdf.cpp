@@ -24,7 +24,6 @@ Pdf::Pdf(int id, QString n)
  */
 void Pdf::ecrireTexte()
 {
-
 }
 
 /**

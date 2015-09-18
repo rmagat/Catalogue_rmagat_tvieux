@@ -8,6 +8,9 @@
  */
 
 #include <QApplication>
+#include <QtGui/QPrinter>
+#include <QtGui/QPainter>
+
 
 /**
  * @brief main
@@ -18,23 +21,15 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
-    maBase=new QSqlDatabase(db);
-    maBase->setHostName("localhost");
-         maBase->setDatabaseName("NewWorld");
-         maBase->setUserName("tvieux");
-         maBase->setPassword("ini01");
-         bool ok = maBase->open();
-         if(!ok)
-         {
-             QMessageBox::warning(this,"New World BackOffice","la connexion a la base de donnée a echouer \n Veuillez verifier que le service mysql est lancer sur localhost",QMessageBox::Ok|QMessageBox::Cancel,QMessageBox::Ok);
-         }
-         else
-         {
-             QMessageBox::warning(this,"connexion établie",QMessageBox::Ok|QMessageBox::Cancel,QMessageBox::Ok);
-         }
+    QPrinter printer(QPrinter::HighResolution);
+    printer.setFullPage(QPrinter::A4);
+    printer.setOutputFormat(QPrinter::NativeFormat);
+    printer.setOutputFileName("catalogue.pdf");
+    QPainter painter;
+    painter.begin(&printer);
+    painter.setFont(QFont("Tahoma",8));
+    painter.drawText(200,200,"HELOOOO");
+    painter.end();
 
-
-    
-    return a.exec();
+    return 0;
 }
