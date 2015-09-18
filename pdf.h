@@ -12,6 +12,7 @@
 #include <QSqlQuery>
 #include <QDebug>
 #include <QSqlRecord>
+#include <QSqlDatabase>
 #include <QSqlRelationalDelegate>
 
 /**

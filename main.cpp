@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
              QMessageBox::warning(this,"New World BackOffice","la connexion a la base de donnée a echouer \n Veuillez verifier que le service mysql est lancer sur localhost",QMessageBox::Ok|QMessageBox::Cancel,QMessageBox::Ok);
          }
 
+
     
     return a.exec();
 }
