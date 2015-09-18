@@ -8,6 +8,11 @@
 #ifndef PDF_H
 #define PDF_H
 #include <QString>
+#include <QMessageBox>
+#include <QSqlQuery>
+#include <QDebug>
+#include <QSqlRecord>
+#include <QSqlRelationalDelegate>
 
 /**
  * @brief La classe Pdf class
@@ -27,6 +32,7 @@ private:
     int idPdf;
     //le ,nom du document
     QString nomDocument;
+    QSqlDatabase * maBase;
 public:
     //constructeur de la classe Pdf
     Pdf(int id, QString n);

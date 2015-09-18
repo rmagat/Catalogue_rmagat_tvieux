@@ -1,9 +1,5 @@
 #include "pdf.h"
-#include <QMessageBox>
-#include <QSqlQuery>
-#include <QDebug>
-#include <QSqlRecord>
-#include <QSqlRelationalDelegate>
+
 /**
  * @author robin magat
  * @file pdf.cpp
