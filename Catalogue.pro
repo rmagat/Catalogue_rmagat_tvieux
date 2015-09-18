@@ -15,5 +15,7 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         pdf.cpp\
+    connexion.cpp
 
 HEADERS  += pdf.h\
+    connexion.h
