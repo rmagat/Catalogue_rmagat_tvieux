@@ -11,6 +11,14 @@
 
 /**
  * @brief La classe Pdf class
+ * public:
+ * le constructeur du pdf
+ * la procedure pour ecrire un text
+ * la procedure qui charge les images
+ * la procédure qui fermer le document en l'enregistrant
+ * private:
+ * idPdf, l'identifiant du pdf
+ * nomDocument, le nom du document
  */
 class Pdf
 {
